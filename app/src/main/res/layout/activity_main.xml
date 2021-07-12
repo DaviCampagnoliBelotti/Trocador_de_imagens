@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgEscudo"
+        android:layout_width="342dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zoro" />
+
+    <Button
+        android:id="@+id/btnZoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Zoro"
+        app:layout_constraintEnd_toStartOf="@+id/btnLuffy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEscudo" />
+
+    <Button
+        android:id="@+id/btnLuffy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luffy"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZoro"
+        app:layout_constraintEnd_toStartOf="@+id/btnSanji"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnZoro"
+        app:layout_constraintTop_toTopOf="@+id/btnZoro" />
+
+    <Button
+        android:id="@+id/btnSanji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sanji"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLuffy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLuffy"
+        app:layout_constraintTop_toTopOf="@+id/btnLuffy" />
+</android.support.constraint.ConstraintLayout>
